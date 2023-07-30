@@ -1251,7 +1251,7 @@ class Piece {
     //worth of a piece
     this.weight = weight;
     //nice system to define images to draw
-    this.image = loadImage(image + color + ".png");
+    this.image = loadImage("chess piece images/" + image + color + ".png");
 
     //black or white
     this.color = color;
@@ -3086,18 +3086,18 @@ function setup() {
   if (whiteBotOn || blackBotOn) {
     botsMakeMoves();
   }
-  wb = loadImage("bishopWhite.png");
-  wn = loadImage("knightWhite.png");
-  wk = loadImage("kingWhite.png");
-  wq = loadImage("queenWhite.png");
-  wr = loadImage("rookWhite.png");
-  wp = loadImage("pawnWhite.png");
-  bb = loadImage("bishopBlack.png");
-  bn = loadImage("knightBlack.png");
-  bk = loadImage("kingBlack.png");
-  bq = loadImage("queenBlack.png");
-  br = loadImage("rookBlack.png");
-  bp = loadImage("pawnBlack.png");
+  wb = loadImage("chess piece images/bishopWhite.png");
+  wn = loadImage("chess piece images/knightWhite.png");
+  wk = loadImage("chess piece images/kingWhite.png");
+  wq = loadImage("chess piece images/queenWhite.png");
+  wr = loadImage("chess piece images/rookWhite.png");
+  wp = loadImage("chess piece images/pawnWhite.png");
+  bb = loadImage("chess piece images/bishopBlack.png");
+  bn = loadImage("chess piece images/knightBlack.png");
+  bk = loadImage("chess piece images/kingBlack.png");
+  bq = loadImage("chess piece images/queenBlack.png");
+  br = loadImage("chess piece images/rookBlack.png");
+  bp = loadImage("chess piece images/pawnBlack.png");
   chessSounds = loadSound("chessSounds.mp3");
   
 }
