@@ -3199,21 +3199,23 @@ function draw() {
     checkCheck(whiteVision, blackVision, whiteKingPos, blackKingPos, "White") &&
     turn === "White"
   ) {
-    fill(checkColor);
-    if (dperspective) {
-      ellipse(
-        whiteKingPos.x * squareSize + squareSize / 2,
-        whiteKingPos.y * squareSize + squareSize / 2,
-        (2 / 3) * squareSize,
-        (2 / 3) * squareSize
-      );
-    } else {
-      ellipse(
-        (7 - whiteKingPos.x) * squareSize + squareSize / 2,
-        (7 - whiteKingPos.y) * squareSize + squareSize / 2,
-        (2 / 3) * squareSize,
-        (2 / 3) * squareSize
-      );
+    if (gameState === 1){
+      fill(checkColor);
+      if (dperspective) {
+        ellipse(
+          whiteKingPos.x * squareSize + squareSize / 2,
+          whiteKingPos.y * squareSize + squareSize / 2,
+          (2 / 3) * squareSize,
+          (2 / 3) * squareSize
+        );
+      } else {
+        ellipse(
+          (7 - whiteKingPos.x) * squareSize + squareSize / 2,
+          (7 - whiteKingPos.y) * squareSize + squareSize / 2,
+          (2 / 3) * squareSize,
+          (2 / 3) * squareSize
+        );
+      }
     }
     checkHistory[turnNumber] = {
       x: whiteKingPos.x,
@@ -3223,23 +3225,24 @@ function draw() {
     checkCheck(whiteVision, blackVision, whiteKingPos, blackKingPos, "Black") &&
     turn === "Black"
   ) {
-    fill(checkColor);
-    if (dperspective) {
-      ellipse(
-        blackKingPos.x * squareSize + squareSize / 2,
-        blackKingPos.y * squareSize + squareSize / 2,
-        (2 / 3) * squareSize,
-        (2 / 3) * squareSize
-      );
-    } else {
-      ellipse(
-        (7 - blackKingPos.x) * squareSize + squareSize / 2,
-        (7 - blackKingPos.y) * squareSize + squareSize / 2,
-        (2 / 3) * squareSize,
-        (2 / 3) * squareSize
-      );
+    if (gameState === 1){
+      fill(checkColor);
+      if (dperspective) {
+        ellipse(
+          blackKingPos.x * squareSize + squareSize / 2,
+          blackKingPos.y * squareSize + squareSize / 2,
+          (2 / 3) * squareSize,
+          (2 / 3) * squareSize
+        );
+      } else {
+        ellipse(
+          (7 - blackKingPos.x) * squareSize + squareSize / 2,
+          (7 - blackKingPos.y) * squareSize + squareSize / 2,
+          (2 / 3) * squareSize,
+          (2 / 3) * squareSize
+        );
+      }
     }
-
     checkHistory[turnNumber] = {
       x: blackKingPos.x,
       y: blackKingPos.y,
