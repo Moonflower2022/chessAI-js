@@ -1,18 +1,15 @@
 /*
-Please email me at harqian@nuevaschool.org if you find any bugs!
+Please email me at dumbderivatives@gmail.com if you find any bugs!
 images from https://commons.wikimedia.org/wiki/Category:PNG_chess_pieces/Standard_transparent
-https://editor.p5js.org/harqian/full/LRvnsSYm2
 */
 
 // TODO
-// profiling
 // add disclaimer for image problem
 // add notation at end
 // 
 // tinker with eval to stop the d5 trap
 // 
 // fix the bot as white, plays way worse
-//
 
 // CHANGES:
 //
@@ -2719,7 +2716,7 @@ function sideBoardStatic() {
     10 * squareSize
   );
   text(
-    "Please email me at harqian@nuevaschool.org if you find any bugs",
+    "Please email me at dumbderivatives@gmail.com if you find any bugs",
     11 * squareSize,
     2.6 * squareSize,
     3 * squareSize,
